@@ -1,0 +1,18 @@
+body{
+    margin: 0 auto;
+    font-family: Arial,sans-serif;
+    width:80vw;
+}
+#container{
+    width: 80vw;
+    height: 10vh;
+    text-align: center;
+    color: navy;
+}
+main{
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+    width: 40vw;
+    background-color: lightgoldenrodyellow;
+}

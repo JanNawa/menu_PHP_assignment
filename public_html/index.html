@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Assignment 4 : Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Restaurant Menu</h1>
+        </div>
+        <main>
+            <form action="content/order.php">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <input type="text" name="firstname" value="Nawaphan" placeholder="first name" required/><br>
+                    <input type="text" name="lastname" value="Chayopathum" placeholder="last name" required/><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Menu</legend>
+                    Food:<br>
+                    <input type="checkbox" name="food[Pizza]" value="10.50" checked> Pizza - $10.50<br>
+                    <input type="checkbox" name="food[Burger]" value="11.99"> Burger - $11.99<br>
+                    <input type="checkbox" name="food[Hot Dog]" value="7.99"> Hot Dog - $7.99<br>
+                    <input type="checkbox" name="food[Poutine]" value="5.99"> Poutine - $5.99<br><br>
+
+                    Drinks:<br>
+                    <input type="checkbox" name="drink[Water]" value="1.99" checked> Water - $1.99<br>
+                    <input type="checkbox" name="drink[Coke]" value="0.99"> Coke - $0.99<br>
+                    <input type="checkbox" name="drink[Juice]" value="3.99"> Juice - $3.99<br>
+                    <input type="checkbox" name="drink[Beer]" value="5.99"> Beer - $5.99<br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Payment</legend>
+                    <input type="radio" name="payment" value="credit" checked> Credit Card<br>
+                    <input type="radio" name="payment" value="debit"> Debit Card<br>
+                    <input type="radio" name="payment" value="cash"> Cash<br>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </main>
+    </body>
+</html>
